@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import CreatePost from "./Components/CreatePost/CreatePost";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
 
@@ -11,7 +13,8 @@ function addNewPost(post){
 }
 
   return (
-    <div className="App">
+    <div>
+      <NavBar />
     </div>
   );
 }
