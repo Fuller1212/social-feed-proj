@@ -7,15 +7,19 @@ function App() {
 const [posts, setPosts] = useState([])
 
 function addNewPost(post){
-  let tempPost = [...posts, post]
+  let tempPost = [...posts, post];
 
   setPosts(tempPost)
 }
 
   return (
-    <div>
+    <><div>
       <NavBar />
-    </div>
+    </div><div className="col-md-6">
+        <div className="border-box">
+          <CreatePost addNewPostProperty={addNewPost} />
+        </div>
+      </div></>
   );
 }
 

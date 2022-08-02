@@ -11,19 +11,20 @@ const CreatePost = (props) => {
             userPost: userPost,
         };
         console.log(newPost)
+        props.addNewPostProperty(newPost)
     }
 
     return ( 
         <form onSubmit={handlePost} className='form-grid'>
             <div className="form-group">
                 <label>Name</label>
-                <input type='text' name="name"/>
+                <input type='text' value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
             <div className="form-group">
                 <label>Post</label>
-                <input type="text" />
+                <input type="text" value={userPost} onChange={(event) => setUserPost(event.target.value)}/>
             </div>
-                <button type="submit" className="btn btn-primary">Create</button>
+                <button type="submit" className="btn btn-primary" >Create</button>
         </form>
      );
 }
