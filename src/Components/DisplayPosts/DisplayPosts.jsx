@@ -1,19 +1,18 @@
+import Post from "../Post/Post";
 
 
 const DisplayPosts = (props) => {
     return ( 
-      <table className="form-group">
-         
-          {props.parentPost.map((post,) => {
+      <div className="form-group">         
+          {props.parentPost.map((postData) => {
             return (
-              <tbody>
-                <tr><strong>{post.name}</strong></tr>
-                <tr>{post.userPost}</tr>
-              </tbody>
+              <Post data={postData} />
+                // <><p><strong>{post.name}</strong>
+                // </p><p>{post.userPost}</p></>             
             )
           })}
         
-    </table> );
+      </div> );
 }
  
 export default DisplayPosts;

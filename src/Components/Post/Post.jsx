@@ -1,8 +1,11 @@
 import { useState } from "react";
 
-const Post = (props) => {
+const Post = ({data}) => {
     return ( 
-        'post'
+        <>
+            <p><strong>{data.name}</strong></p>
+            <p>{data.userPost}</p>
+        </> 
      );
 }
  

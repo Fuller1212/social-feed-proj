@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import CreatePost from "./Components/CreatePost/CreatePost";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import NavBar from "./Components/NavBar/NavBar";
+import './App.css'
 
 function App() {
 
@@ -21,7 +22,7 @@ function addNewPost(post){
           <CreatePost addNewPostProperty={addNewPost} />
         </div>
         <div className="border-box">
-          <DisplayPosts parentPost ={posts}/>
+          <DisplayPosts parentPost = {posts}/>
         </div>
       </div></>
   );
