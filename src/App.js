@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import CreatePost from "./Components/CreatePost/CreatePost";
+import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
@@ -18,6 +19,9 @@ function addNewPost(post){
     </div><div className="col-md-6">
         <div className="border-box">
           <CreatePost addNewPostProperty={addNewPost} />
+        </div>
+        <div className="border-box">
+          <DisplayPosts parentPost ={posts}/>
         </div>
       </div></>
   );
