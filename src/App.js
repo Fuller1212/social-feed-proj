@@ -17,12 +17,12 @@ function addNewPost(post){
   return (
     <><div>
       <NavBar />
-    </div><div className="col-md-6">
+    </div><div className="background">
         <div className="border-box">
           <CreatePost addNewPostProperty={addNewPost} />
         </div>
-        <div className="border-box">
-          <DisplayPosts parentPost = {posts}/>
+        <div className="post">
+          <DisplayPosts parentPost={posts}/>
         </div>
       </div></>
   );

@@ -8,9 +8,14 @@
     border-color: black;
     margin: 2em;
     padding: 1em;
-    border-radius: 50px;
+    border-radius: 25px;
     vertical-align: middle;
     text-align: left;
     position: relative;
-    width:max-content;
+    background-color: whitesmoke;
 }
+
+/* .wrap {
+    width: 100%;
+    word-wrap: break-word;
+} */

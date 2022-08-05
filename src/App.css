@@ -1,6 +1,18 @@
 
-.col-md-6 {
-  flex: 0 0 auto;
+.background {
   width: 100%;
-  background-color: aliceblue;
+  background-color: lightblue;
+  flex: 0 0 auto;
+  padding: auto;
+}
+
+.wrap {
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.post {
+  line-break: auto;
+  margin-bottom: 3px;
 }
